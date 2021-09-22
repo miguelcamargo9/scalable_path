@@ -2,8 +2,6 @@
 
 @section('content')
 
-<task-component></task-component>
-
-<create-task-component></create-task-component>
+<products-component></products-component>
 
 @endsection

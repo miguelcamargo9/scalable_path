@@ -19,6 +19,11 @@ Vue.component(
 );
 
 Vue.component(
+    "products-component",
+    require("./components/ProductComponent.vue").default
+);
+
+Vue.component(
     "create-task-component",
     require("./components/CreateTaskComponent.vue").default
 );

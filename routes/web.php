@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,5 @@ Route::resource('tasks', TaskController::class, ['except' => 'show', 'create', '
 Route::get('/vue/{vue_capture?}', function () {
     return view('dashboard');
 })->where('vue_capture', '[\/\w\.-]*');
+
+Route::resource('products', ProductController::class);
